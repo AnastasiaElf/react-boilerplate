@@ -1,0 +1,62 @@
+@import "styles/Constants";
+
+.content-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.collapse-navbar {
+    background-color: $mainDarkColor;
+}
+
+.navbar.app-navbar {
+    min-height: 56px;
+    max-height: 56px;
+    background-color: $mainDarkColor;
+}
+
+.navbar.app-navbar a.nav-link {
+    color: $mainLightColor;
+    padding: 1rem;
+}
+
+.navbar.app-navbar a.nav-link:hover{
+    color: $mainLightColorHover;
+}
+
+.navbar.app-navbar a.nav-link.active {
+    background-color: $mainDarkColorActive;
+    color: $mainLightColor;
+}
+
+.navbar.app-navbar .app-navbar-brand {
+    color: $mainLightColor;
+}
+
+.navbar.app-navbar .app-navbar-brand:hover {
+    color: $mainLightColorHover;
+}
+
+.nav.language-select-left {
+    display: none;
+    margin-right: 20px;
+}
+
+.nav.language-select-right {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .navbar-expand-md .navbar-collapse {
+        margin-top: 10px;
+    }
+
+    .nav.language-select-left {
+        display: block;
+    }
+    
+    .nav.language-select-right {
+        display: none;
+    }    
+}
